@@ -117,6 +117,9 @@
                 <h2 class="section-header">Skills</h2>
                 
                 <table>
+                    <colgroup>
+                        <col span="1" style="background-color:rgb(245, 238, 238)">
+                    </colgroup>
                     <thead>
                         <tr>
                             <th>Skill</th>
@@ -143,9 +146,6 @@
                         <tr>
                             <td>CSS</td>
                             <td>&#9733; &#9733; &#9734; &#9734; &#9734;</td>
-                        </tr>
-                        <tr>
-                            <td></td>
                         </tr>
                     </tbody>
                 </table>
@@ -198,23 +198,6 @@
                 <p><b>See my canvas tag experiment:</b></p>
                 <canvas id="canvas"></canvas>
 
-                <p><b>See some of my favorite movies:</b></p>
-                <table>
-                    <colgroup>
-                        <col span="1" style="background-color:rgb(245, 238, 238)">
-                    </colgroup>
-                    <tr>
-                        <th>Sci-fi</th>
-                        <th>Documentary</th>
-                        <th>Comedy</th>
-                    </tr>
-                    <tr>
-                        <td>"Her"</td>
-                        <td>"Last Breath"</td>
-                        <td>"Minions"</td>
-                    </tr>
-                </table>
-
                 <p><b>And my template experiment where I clone some text:</b></p>
                 <div id="template-container"></div>
                 <template id="template">
@@ -237,7 +220,7 @@
                 </fieldset>
                 <br/>
 
-                <label for="dog-cat-selection">Are you a dog or a cat person?:</label>
+                <label for="dog-cat-choice">Are you a dog or a cat person?:</label>
                 <input list="dog-cat-selection" id="dog-cat-choice" name="dog-cat-choice" />
                 <datalist id="dog-cat-selection">
                     <option value="Dog">
@@ -288,12 +271,12 @@
                 <br/>
                 <h4>Contact form</h4>
                 <div id="form-container">
-                    <form action="" method="post">
-                        <label for="full-name">Full Name</label>
+                    <form action="contact-form-process.php" method="post">
+                        <label for="contact-full-name">Full Name</label>
                         <input type="text" id="contact-full-name" name="full-name" placeholder="Full Name" required><br>
-                        <label for="email">Email</label>
+                        <label for="contact-email">Email</label>
                         <input type="text" id="contact-email" name="email" placeholder="Email" required><br>
-                        <label for="message">Message</label>
+                        <label for="contact-message">Message</label>
                         <textarea id="contact-message" name="message" rows="5" cols="33" placeholder="Your message" required></textarea><br>
                         <button type="submit" id="contact-submit" name="submit">Send</button>
                     </form>
@@ -304,7 +287,7 @@
         <!--FOOTER-->
         <footer>
             <hr/>
-            <h4>&copy Margarita Leonova 2022</h4>
+            <h4>&copy; Margarita Leonova 2022</h4>
         </footer>
 
         <script>
@@ -324,6 +307,6 @@
         </script>
 
         <!--script placeholder-->
-        <script src=""></script>
+        <!--<script src=""></script>-->
     </body>
 </html>
