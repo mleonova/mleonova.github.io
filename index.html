@@ -6,7 +6,7 @@
         <title>Margarita Leonova | Home</title>
 
         <!--stylesheet placeholder-->
-        <link href="" rel="stylesheet"/>
+        <link href="styles.css" rel="stylesheet"/>
 
         <style>.banner-subheading{color:#6e7de4}</style>
     </head>
@@ -25,8 +25,8 @@
             <div id="banner">
                 <h1>Hi!</h1>
                 <h1>I'm Margarita.</h1>
-                <h2><span class="banner-subheading">Computer Science Student + </span><h2>
-                <h2><span class="banner-subheading">Design Enthusiast</span></h2>
+                <span class="banner-subheading">Computer Science Student + </span>
+                <span class="banner-subheading">Design Enthusiast</span>
             </div>
         </header>
 
@@ -35,7 +35,7 @@
             <!--ABOUT ME SECTION-->
             <section id="about-me">
 
-                <h2 id="section-header">About Me</h2>
+                <h2 class="section-header">About Me</h2>
 
                 <div id="about-container">
                     <picture>
@@ -54,19 +54,19 @@
 
             <!--PROJECTS SECTION-->
             <section id="projects">
-                <h2 id="section-header">Projects</h2>
+                <h2 class="section-header">Projects</h2>
                 <h2 id="section-subheader">Shadow mapping with Projective Transformations</h2>
-                <h3 id="projects-subheader">Goal</h3>
+                <h3 class="projects-subheader">Goal</h3>
                 <p>
                     The main goal of this project was to implement a more realistic scene by using shadow mapping to cast shadows and projective transformations to help transform a scene as view point changes. "Two pass" shadow mapping algorithm is used for rendering the scene. The first pass renders the scene form the light’s point of view, and the second pass renders the scene from its original model view. On the first pass, we must store the depth information of the scene (in particular all the objects that are present in the scene), and we use this information in the second pass to calculate shadows by comparing the depth information that we obtained during the first pass to the current depth information.
                 </p>
 
-                <h3 id="projects-subheader">Implementation</h3>
+                <h3 class="projects-subheader">Implementation</h3>
                 <p>The first step of this process is to set up depth shaders. The purpose of these shaders is to help store and calculate the depth of the shadows. gl_FragCoord can be used to obtain z coordinate (out of x, y, z coordinates) which represents depth information between the light source and the surface of the object that obstructs the light) and can be linearized to get a better approximation.</p>
                 <p>Next, we want to obtain view, model, projection, and position matrices. To do that we can use matrix transformation techniques such as rotation and projection as well as some basic multiplication to transform the modelview matrix into four separate matrixes. Now we're ready to calculate our new viewpoint position by multiplying projection, view, model and position matrices together.</p>
                 <p>Next, we want to set up depth map and frame buffer object to verify if the depth shader is working as intended. After creating frame buffer object in light.cpp and rendering the scene we can see a depth map output.</p>
                 
-                <div id="projects-images">
+                <div class="projects-images">
                     <img src="images/shadow-mapping-1.png" alt="Shadow Mapping">
                     <caption>Front view</caption>
                     <img src="images/shadow-mapping-2.png" alt="Shadow Mapping">
@@ -97,8 +97,8 @@
 
                 <p>Once the shadow has been calculated we are able to multiply it to the diffuse and specular components of the Blinn-Phong model. We use Blinn-Phong model to eliminate aliasing and produce a more clear picture of the shades. Below are pictures of the result. Picture on the left shows a scene without shadows and picture on the right shows a scene with shadows.</p>
                 
-                <h3 id="projects-subheader">Result</h3>
-                <div id="projects-images">
+                <h3 class="projects-subheader">Result</h3>
+                <div class="projects-images">
                     <figure>
                         <img src="images/shadow-mapping-3.png" alt="Shadow Mapping">
                         <figcaption>Before implementation</figcaption>
@@ -116,7 +116,7 @@
 
             <!--SKILLS SECTION-->
             <section id="skills">
-                <h2 id="section-header">Skills</h2>
+                <h2 class="section-header">Skills</h2>
                 
                 <table>
                     <thread>
@@ -163,7 +163,7 @@
 
             <!--EXPERIMENTS SECTION-->
             <section id="experiments">
-                <h2 id="section-header">Experiments</h2>
+                <h2 class="section-header">Experiments</h2>
 
                 <h3>Welcome to my experiments section</h3>
                 <p><b>On this page you can learn where I get my inpiration from:</b></p>
@@ -274,7 +274,7 @@
 
             <!--CONTACT SECTION-->
             <section id="contact">
-                <h2 id="section-header">Contact Me</h2>
+                <h2 class="section-header">Contact Me</h2>
 
                 <div id="current-location">
                     <h4>I am currently located in San Diego</h4>
