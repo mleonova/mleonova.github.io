@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Margarita Leonova | Home</title>
+
+    <!--stylesheet-->
+    <link href="styles.css" rel="stylesheet" />
+
+    <style>
+        .banner-subheading {
+            color: #6e7de4
+        }
+    </style>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <!-- LOGO -->
+        <div id="nav-logo">&nbsp;ML</div>
+        <div id="nav-blub"></div>
+
+        <label for="checkbox" id="hamburger-menu">
+            <svg viewBox="0 0 100 75" width="40" height="28">
+                <rect width="85" height="15" rx="10"></rect>
+                <rect y="30" width="85" height="15" rx="10"></rect>
+                <rect y="60" width="85" height="15" rx="10"></rect>
+            </svg>
+        </label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+
+        <ul id="nav-menu">
+            <li><a href="index.html#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#my-projects">Projects</a></li>
+            <li><a href="#my-skills">Skills</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <!--HOME SECTION-->
+
+        <section id="home">
+            <div id="home-text">
+                <h1>Hi!<br>
+                    I'm Margarita.</h1>
+                <br>
+                <h2>Computer Science Student +</h2>
+                <h2>Design Enthusiast</h2>
+            </div>
+
+            <picture id="home-image">
+                <source srcset="images/female-programmer-large.png" media="(min-width: 85em)">
+                <source srcset="images/female-programmer-medium.png" media="(min-width: 40em)">
+                <img src="images/female-programmer-small.png" alt="Female programmer working" loading="lazy"
+                    decoding="async">
+            </picture>
+        </section>
+
+        <!--ABOUT ME SECTION-->
+        <h1 class="section-header" id="about">About Me</h1>
+
+        <section id="about-me">
+
+            <div id="about-container">
+                <picture id="about-image">
+                    <source srcset="images/female-working-large.jpg" media="(min-width: 85em)">
+                    <source srcset="images/female-working-medium.jpg" media="(min-width: 40em)">
+                    <img src="images/female-working-small.jpg" alt="A description of the image." loading="lazy"
+                        decoding="async">
+                </picture>
+
+                <p id="about-text">
+                    My name is <i>Margarita</i>. Friends usually call me <em>Rita</em>. I am currently a Senior at the
+                    <em>University of California San Diego</em>. My interests lie in robotics, computer graphics,
+                    product development and UI/UX design. I’ve spent past few years growing as a software engineer
+                    through education, now I’m ready to put my knowledge and skills into practice.
+                    <br><br>
+                    As a person, I am curious, open-minded, down to earth, and very hardworking. I enjoy travelling and
+                    outdoor activities. You can often find me riding my bike, taking long nature walks, or hiking the
+                    mountains with breathtaking views. Next on my bucket list is to visit Alaska and learn mountain
+                    climbing.
+                </p>
+            </div>
+        </section>
+
+        <!--PROJECTS SECTION-->
+        <h1 class="section-header" id="my-projects">Projects</h1>
+        <section id="projects">
+            <div id="projects-container">
+                <div id="projects-text">
+                    <h3>Shadow Mapping</h3>
+                    <br>
+                    <p><b>Timeline:</b> November 2021 to December 2021<br>
+                        <b>Type:</b> personal interest<br>
+                        <b>Tools:</b> C++, OpenGL
+                    </p>
+                    <br>
+                    <p>Shadow mapping is a technique that was first introduced by Lance Williams in 1978. It is widely
+                        used in computer graphics as well as computer animation. Shadow mapping algorithm allows us to
+                        generate realistic shadows in 3D scenes.</p>
+                    <a href="projects.html" target="_blank">Learn more</a>
+                </div>
+
+                <div id="projects-image">
+                    <picture>
+                        <source srcset="images/shadow-mapping-4-large.png" media="(min-width: 85em)">
+                        <source srcset="images/shadow-mapping-4-medium.png" media="(min-width: 40em)">
+                        <img src="images/shadow-mapping-4-small.png" alt="A description of the image." loading="lazy"
+                            decoding="async">
+                    </picture>
+                </div>
+
+            </div>
+        </section>
+
+        <!--SKILLS SECTION-->
+        <h1 class="section-header" id="my-skills">Skills</h1>
+        <section id="skills">
+
+            <ul id="languages">
+                <li>
+                    <h3>Programming Languages</h3>
+                </li>
+                <li>
+                    <h3>Python</h3>
+                    <span class="animated-bar"><span id="python"></span></span>
+                </li>
+                <li>
+                    <h3>Java</h3>
+                    <span class="animated-bar"><span id="java"></span></span>
+                </li>
+                <li>
+                    <h3>C++</h3>
+                    <span class="animated-bar"><span id="cpp"></span></span>
+                </li>
+                <li>
+                    <h3>HTML/CSS</h3>
+                    <span class="animated-bar"><span id="htmlcss"></span></span>
+                </li>
+            </ul>
+
+            <ul id="frameworks">
+                <li>
+                    <h3>Frameworks / Developer Tools</h3>
+                </li>
+                <li>
+                    <h3>OpenGL</h3>
+                    <span class="animated-bar"><span id="opengl"></span></span>
+                </li>
+                <li>
+                    <h3>Houdini</h3>
+                    <span class="animated-bar"><span id="houdini"></span></span>
+                </li>
+                <li>
+                    <h3>VS Code</h3>
+                    <span class="animated-bar"><span id="vscode"></span></span>
+                </li>
+                <li>
+                    <h3>Git</h3>
+                    <span class="animated-bar"><span id="git"></span></span>
+                </li>
+            </ul>
+
+        </section>
+
+        <!--CONTACT SECTION-->
+        <h1 class="section-header" id="contact-me">Contact Me</h1>
+
+        <section id="contact">
+
+            <div id="contact-container">
+
+                <div class="contact-image">
+                    <picture>
+                        <source srcset="images/contact-large.jpg" media="(min-width: 85em)">
+                        <source srcset="images/contact-medium.jpg" media="(min-width: 40em)">
+                        <img src="images/contact-small.jpg" alt="A description of the image." loading="lazy"
+                            decoding="async">
+                    </picture>
+                </div>
+
+                <div id="contact-form">
+
+                    <form action="contact-form-process.php" method="post">
+
+                        <label for="contact-full-name">Full Name:</label>
+                        <input type="text" id="contact-full-name" name="full-name" required><br>
+
+                        <label for="contact-email">Email:</label>
+                        <input type="text" id="contact-email" name="email" required><br>
+
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" cols="33" required></textarea><br>
+
+                        <button type="submit" id="contact-submit" name="submit">Send</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fe8d88"
+                d="M0,128L80,122.7C160,117,320,107,480,133.3C640,160,800,224,960,229.3C1120,235,1280,181,1360,154.7L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+            <text x="50%" y="85%" text-anchor="middle">With &#10084; by Margarita Leonova</text>
+        </svg>
+    </footer>
+</body>
+
+</html>
