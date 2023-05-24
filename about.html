@@ -36,14 +36,14 @@
         <nav class="nav-bar">
             <div class="logo">
                 <a href="index.html">
-                    <img src="/resources/logo.svg" alt="website logo" />
+                    <img src="/resources/logo.svg" alt="" />
                 </a>
             </div>
 
             <ul class="nav-links open">
                 <!-- <li class="link active"><a href="index.html">Home</a></li> -->
+                <li class="link"><a href="about.html">About</a></li>
                 <li class="link"><a href="#projects-section">Projects</a></li>
-                <li class="link"><a href="#about">About</a></li>
                 <li class="link"><a href="#mid-section">Contact</a></li>
                 <li class="resume-link"><a href="resume.pdf" target="_blank">Resume<i
                             class="fa-solid fa-arrow-right"></i></a>
@@ -62,155 +62,96 @@
 
         <div class="back-btn"></div>
 
-        <!-- HOME SECTION -->
-        <section id="home-section">
-            <section-container>
-                <div class="flex-component">
-
-                    <div class="text-block">
-                        <h1>Hello & Welcome!</h1><br>
-                        <h2>I'm Margarita, an Estonian who recently graduated with a degree in Computer Science. I am
-                            now
-                            actively seeking exciting job opportunities to kickstart my career.</h2><br>
-                        <button type="submit" class="button" id="home-btn" name="submit"
-                            onclick="window.open('resume.pdf','_blank')">View Resume&nbsp;&nbsp;<i
-                                class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-
-                    <div class="image-block">
-                        <img src="/resources/hero_image.svg" alt="girl is riding a bicycle" />
-                    </div>
-
-
-                </div>
-            </section-container>
-        </section>
-
-        <section class="separator">
-
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects-section">
-            <section-container>
-                <h1 class="sub-heading">Latest projects</h1>
-
-                <div class="project-container">
-                    <div class="project">
-                        <div class="project-gallery">
-
-                            <div class="large-image">
-                                <div class="project-image">
-                                    <a href="https://github.com/mleonova/Graphics-Part1-Skeleton" target="_blank"><img src="/resources/projects_skeleton.svg" alt="" /></a>
-                                </div>
-                            </div>
-
-                            <div class="small-image1">
-                                <div class="project-image">
-                                    <a href="https://github.com/mleonova/Graphics-Part1-Skeleton" target="_blank"><img src="/resources/projects_skinning.png" alt="" /></a>
-                                </div>
-                            </div>
-
-                            <div class="small-image2">
-                                <div class="project-image">
-                                    <a href="https://github.com/mleonova/Graphics-Part1-Skeleton" target="_blank"><img src="/resources/wasp_animation.gif"
-                                        alt="animation project video: walking wasp" /></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-name">
-                        <h4>Computer Animation</h4>
-                        <h5 class="label">C++</h5>
-                    </div>
-                </div>
-                <br><br><br>
-
-                <div class="project-container">
-                    <div class="project">
-                        <div class="project-single">
-                            <div class="project-image">
-                                <a href="https://github.com/mleonova/mleonova.github.io" target="_blank"><img src="/resources/projects_personal_website.png"
-                                    alt="" /></a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="project-name">
-                        <h4>Personal Website</h4>
-                        <h5 class="label">HTML</h5>
-                        <h5 class="label">CSS</h5>
-                        <h5 class="label">JavaScript</h5>
-                    </div>
-                </div>
-            </section-container>
-        </section>
-
-        <section class="separator"></section>
+        <!-- <section id="slider-section" style="border: red solid;">
+            <div class="slider-scroll"></div>
+        </section> -->
 
         <!-- ABOUT SECTION -->
-        <section id="about">
-            <section-container>
-                <h1 class="sub-heading">About</h1>
-                <div class="flex-component">
-                    <div class="text-block">
-                        <p>
-                            My name is Margarita. I'm originally from Estonia - a small, but charming country in
-                            Northern Europe. Seeking a change from my previous role as an accountant , I decided to
-                            embark on an adventure to learn English and immerse myself in diverse cultures. This led
-                            me to the United States, where I became an au pair, caring for two wonderful children
-                            and gaining a whole new perspective on life. <br><br>
 
-                            During this time, I uncovered a deep passion for programming through my computer science
-                            courses at a community college. Motivated by this newfound love, I made the bold
-                            decision to further pursue my education. Transferring to the University of California
-                            San Diego, I recently completed my studies in Computer Science, seizing valuable
-                            opportunities to engage in student organizations and gain practical experience through
-                            internship, enriching my journey in this dynamic field. <br><br>
-
-                            When I'm not coding away, you'll find me out in the great outdoors. Hiking, biking, and
-                            walking are my go-to activities to connect with nature and find inner peace. Lately,
-                            I've also picked up tennis as a new hobby. Although I'm still a beginner, I can't help
-                            but dream of playing at Wimbledon someday. And if you happen to share my deep love for
-                            ramen, well, it's safe to say we're destined to get along! <br><br>
-
-                            As for my personality, I like to keep it real. I'm honest, hardworking, and down to
-                            earth. Being organized is my superpower. I could alphabetize your pantry and color-code
-                            your closet without breaking a sweat. So, if you're looking for someone who's not afraid
-                            to get their hands dirty in the world of technology, all while caring about the bigger
-                            picture, then I'm your girl.
-                        </p>
-                    </div>
-                    <div class="image-block">
-                        <div id="block1">
-                            <img src="/resources/about_image.png" alt="about image" />
-                        </div>
-
-                        <div id="block2">
-                            <svg class="hello" width="309" height="167" viewBox="0 0 309 167" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path id="letters"
-                                    d="M3 108.052C16.5 95.5 15 98 25 85C27.752 81.4224 40.1963 64.5991 42.5132 60.5C44.4934 56.9965 48 52 51 46C54.4242 39.1516 54.5 40.5 58 28C60.301 19.7823 59.5 11.8553 54.5 5.49998C50.5855 0.524458 43.445 4.99242 42.5132 10.8484C40.5 23.5 40.1793 26.3191 39.6075 34.0391C38.8327 44.4988 38.5658 55.6805 38.5658 66.1115C38.5658 81.3667 39.1679 96.5275 39.5526 111.726C39.8351 122.884 41.5263 133.869 41.5263 145.059C41.5263 149.727 42.5132 160.916 42.5132 165.5C42.5132 171.663 42.5132 152.597 42.5132 150.98C42.5132 136.412 48.6157 119.906 56.8224 108.052C59.6447 103.976 64.7166 97.9567 70.1447 98.7321C75.2749 99.465 77.9104 106.003 78.0395 110.519C78.2292 117.16 78.0395 118.678 78.0395 125.322C78.0395 127.477 78.0395 132 78.5329 137.658C79.5221 149 81 153 81 153C84.5 163.52 93.2535 157.888 101.175 153.94C119 145.059 129 136.077 132.5 116.5C136 96.9229 128.5 90 120.5 91.5C113.334 92.8437 108.671 106.67 113.566 122.142C116.526 131.5 119.791 137.907 126.175 144.291C132.013 150.129 143.706 153.133 151.011 148.019C161.719 140.524 169.077 126.855 173.654 114.905C180.539 96.9278 181.5 82.2833 181.5 57.5C181.5 51.7705 182.723 34.5 173.654 34.5C165.203 34.5 162.981 48.8548 162.14 55.4755C160.435 68.9036 160.5 77.9596 160.5 91.5C160.5 101.14 162.141 118.735 166.421 127.296C171.749 137.952 173.654 153.94 198 149.5C209.5 145.657 214.001 134.5 217.5 124.335C221.625 112.352 222.667 101.244 222.667 88.5C222.667 73.2438 222.667 71.7407 222.667 63.5C222.667 56.3515 222.359 48.316 220 41.5C216.806 32.2724 208.5 32 204 44C198.938 57.5 198.092 73 200.408 88.5C202.724 104 202.357 100.212 204 107.559C205.643 114.905 211 136.177 222.667 144.291C229.5 149.5 234.5 152 243 149.5C249.5 147.588 253 140.866 253 136C253 134.894 254.079 137.537 254.889 138C255.867 140.105 257 143.672 259 145.657C261.5 149.366 276.886 150.419 283.741 141.605C294.027 128.38 289.547 102.774 276 96C267.599 91.7998 256.829 97.5 254 107.5C251.171 117.5 251.518 121 252 125.5C252.482 130 255 147 266 151C269.411 152.516 274.742 153.5 278.5 153.5C287.659 153.5 297.623 153.723 306 150"
-                                    stroke="#EF6351" stroke-width="4.95445" stroke-linecap="round" />
-                            </svg>
-
-                        </div>
-
-                    </div>
-                </div>
-
-                <section class="separator"></section>
-
-            </section-container>
-
-
+        <section id="hero">
+            <div class="image-block-1">
+                <img src="/resources/vtoraja-test.svg" alt="girl is riding a bicycle" />
+            </div>
+            <div class="slider-scroll"></div>
         </section>
 
+        <section id="about">
+            <section-container>
+
+                
+
+                <section id="background>">
+                    <div class="text-block">
+                        <p>
+                            In my free time, I'm usually out and about exploring the beauty of nature, whether it's
+                            a leisurely bike ride or exploring new hiking trails. But when I'm feeling more low-key, I
+                            also enjoy taking relaxing walks. On lazier days, I like to curl up indoors with a good
+                            book or binge-watch a new Netflix series. Hey, we all have those days, right? <br><br>
+                            In addition to my love for the great outdoors, I'm also a self-proclaimed foodie who enjoys
+                            trying out new restaurants and discovering different cuisines. My latest addiction is ramen
+                            - there's just something about that savory broth and those delicious noodles that always
+                            hits the spot!
+                        </p>
+                    </div>
+
+                    <div class="image-block">
+                        <!-- <img id="div1" src="/resources/sedona.jpg" alt="girl is riding a bicycle" /> -->
+                        <!-- <img id="div2" src="/resources/zion.jpg" alt="girl is riding a bicycle" /> -->
+                        <img id="div3" src="/resources/website_image.jpg" alt="girl is riding a bicycle" />
+                    </div>
+                </section>
+
+                <section id="hobbies">
+                    <div class="text-block">
+                        <p>
+                            In my free time, I'm usually out and about exploring the beauty of nature, whether it's
+                            a leisurely bike ride or exploring new hiking trails. But when I'm feeling more low-key, I
+                            also enjoy taking relaxing walks. On lazier days, I like to curl up indoors with a good
+                            book or binge-watch a new Netflix series. Hey, we all have those days, right? <br><br>
+                            In addition to my love for the great outdoors, I'm also a self-proclaimed foodie who enjoys
+                            trying out new restaurants and discovering different cuisines. My latest addiction is ramen
+                            - there's just something about that savory broth and those delicious noodles that always
+                            hits the spot!
+                        </p>
+                    </div>
+
+                    <div class="image-block">
+                        <!-- <img id="div1" src="/resources/sedona.jpg" alt="girl is riding a bicycle" /> -->
+                        <img id="div2" src="/resources/zion.jpg" alt="girl is riding a bicycle" />
+                        <img id="div3" src="/resources/colorado.jpg" alt="girl is riding a bicycle" />
+                    </div>
+                </section>
 
 
+                <div class="flex-component">
 
+                    <!-- <div class="image-block">
+                        <img src="/resources/website_image.jpg" alt="girl is riding a bicycle" />
+                    </div> -->
+
+                    <div class="image-block-1">
+                        <!-- <img id="div1" src="/resources/sedona.jpg" alt="girl is riding a bicycle" /> -->
+                        <!-- <img id="div2" src="/resources/vtoraja.svg" alt="girl is riding a bicycle" /> -->
+                        <!-- <img id="div3" src="/resources/colorado.jpg" alt="girl is riding a bicycle" /> -->
+                    </div>
+
+                    <!-- <div class="text-block">
+                        <p>
+                            Hi, I'm Margarita, and I am from Estonia, a small yet captivating country nestled in
+                            Northern Europe. For years, I worked as an accountant, and while I appreciated the work, I
+                            yearned for a new challenge. So, I decided to take a leap of faith and search for new
+                            opportunities across the pond in the USA. Moving here was a no-brainer; I could learn a new
+                            language, soak up a new culture, make new friends, and explore endless possibilities. And
+                            guess what? I've been here for eight years now, and I continue to cherish every moment of
+                            this adventure.
+                        </p> -->
+                    </div>
+
+                </div>
+
+                <!-- <div class="slider-scroll"></div> -->
+            </section-container>
+        </section>
 
         <section id="mid-section">
 
@@ -346,8 +287,6 @@
 
         </section>
 
-
-
         <!-- CONTACT -->
         <section id="contact-section">
             <section-container>
@@ -365,16 +304,13 @@
                         <br>
 
                         <ul id="contact-icons">
-                            <li><a href="mailto:margarita.leonova@outlook.com"><i
-                                        class="fa-regular fa-envelope"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/leonovam/" target="_blank"><i
-                                        class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a href="#resume-section"><i class="fa-regular fa-envelope"></i></a></li>
+                            <li><a href="#resume-section"><i class="fa-brands fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
 
                     <div class="form-block">
-                        <form action="https://getform.io/f/3ee6d9f6-ef8d-4e3e-9cb3-5f27066452b3" target="_blank"
-                            method="post" id="form">
+                        <form action="contact-form-process.php" method="post">
 
                             <label id="name-label" for="name">Full Name</label>
                             <input id="name-input" name="name" type="text" required>
@@ -394,23 +330,15 @@
             </section-container>
         </section>
 
-        <section id="illustration">
-            <div class="image-block">
-                <img src="/resources/footer-image.svg" alt="hiking girl" />
-            </div>
-        </section>
-
         <!--FOOTER-->
         <footer>
             <section class="footer-container">
                 <!-- <div id="footer-divider"></div> -->
                 <div class="socials-container">
                     <ul class="socials">
-                        <li><a href="https://www.linkedin.com/in/leonovam/" target="_blank"><i
-                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="https://github.com/mleonova" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a></li>
-                        <!-- <li><a href="#"><i class="fa-brands fa-codepen"></i></a></li> -->
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-codepen"></i></a></li>
                     </ul>
                     <p>With &#10084; by Margarita Leonova</p>
                 </div>
